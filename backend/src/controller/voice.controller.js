@@ -17,4 +17,13 @@ module.exports = {
       }else message.reply('Audio no encontrado prueba con m audio list');  
     }
   },
+  vgatos: (message) => {
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel.join()
+      .then(connection => {
+        connection.playFile('assets/audio/VGatos.mp3');
+      })
+      .catch(console.log);
+    } else  message.reply('No estas en el canal de voz!');
+  },
 };
