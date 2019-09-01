@@ -1,7 +1,7 @@
 const config = require('../config/config');
 const audios = require('../config/audio');
 module.exports = {
-  audio: (message) => {
+  audio: async (message, bot) => {
     const args = message.content.slice(config.discord.prefix.length).trim().split(/ +/g);
     const commannd = args[1]; 
     if(typeof commannd === 'string') {
@@ -10,9 +10,8 @@ module.exports = {
         message.channel.send(list);
       }else if(typeof audios[commannd] !== 'undefined') {
         if (message.member.voiceChannel) {
-          message.member.voiceChannel.join()
-          .then( connection => connection.playFile(audios[commannd]))
-          .catch(console.log);
+         const connection = await message.member.voiceChannel.join();
+         await connection.playFile(audios[commannd]);
         } else message.reply('No estas en el canal de voz!');  
       }else message.reply('Audio no encontrado prueba con m audio list');  
     }
