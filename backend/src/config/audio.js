@@ -4,4 +4,5 @@ module.exports = {
   scream: `${path}/grito.mp3`,
   rol: `${path}/rol.mp3`,
   vgatos: `${path}/vgatos.mp3`,
+  amai: `${path}/amai.mp3`,
 };
