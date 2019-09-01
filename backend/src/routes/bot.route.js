@@ -17,5 +17,5 @@ exports.assignRoutes = (bot, config) => {
       message.reply('Error :(');
     }
   });
-  bot.on("ready", () =>  bot.user.setActivity(`Candy Crush Saga`));
+  bot.on("ready", () =>  bot.user.setActivity(`TETO`));
 };

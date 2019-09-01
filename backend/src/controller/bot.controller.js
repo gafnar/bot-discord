@@ -10,5 +10,4 @@ module.exports = {
   ...basic,
   ...images,
   ...game,
-  beg: (message) =>  message.channel.send('pls beg'),
 };
