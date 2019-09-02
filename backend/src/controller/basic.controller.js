@@ -9,9 +9,8 @@ module.exports = {
     const deleteCount = parseInt(args[1], 10);
     if(!deleteCount || deleteCount < 2 || deleteCount > 100)
     return message.reply("Dime cuantos mensajes mamadisimos borro");
-    
     // So we get our messages, and delete them. Simple enough, right?
     const fetched = await message.channel.fetchMessages({limit: deleteCount});
     await message.channel.bulkDelete(fetched)
-  },
+  }
 };
