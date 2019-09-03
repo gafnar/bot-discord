@@ -1,4 +1,4 @@
-# Rss aggregator backend
+# Bot discord backend
 
 ## Set up and run
 ```sh
