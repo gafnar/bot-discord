@@ -5,4 +5,5 @@ module.exports = {
   rol: `${path}/rol.mp3`,
   vgatos: `${path}/vgatos.mp3`,
   amai: `${path}/amai.mp3`,
+  gallina: `${path}/gallina.mp3`,
 };
