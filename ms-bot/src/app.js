@@ -1,10 +1,10 @@
 const Discord = require('discord.js');
 const config = require('./config/config');
-const routes = require('./routes/bot.route');
+const bot = require('./routes/bot');
 // require('./config/db');
-const bot = new Discord.Client();
+const discord = new Discord.Client();
 
-routes.assignRoutes(bot, config);
-bot.login(config.discord.token);
+bot.start(discord, config);
+discord.login(config.discord.token);
 
-module.exports = bot;
+module.exports = discord;
