@@ -1,7 +1,7 @@
 module.exports = {
   app: {
     logLevel: 'off',
-    name: 'rss-aggregator',
+    name: 'bot-discord',
     port: 3015,
     https: false,
     url: 'http://localhost',
