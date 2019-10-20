@@ -16,6 +16,6 @@ module.exports = {
   tokenSignature: process.env.TOKEN_SIGNATURE || 'SIGNATURE',
   discord:{
     token: process.env.TOKEN_DISCORD || '',
-    prefix: 'm',
+    prefix: 'm ',
   },
 };
