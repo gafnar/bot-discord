@@ -22,7 +22,7 @@ exports.start = (bot, config) => {
       // TODO ADD ERROR CONTROLLER
       if (typeof botController[command] === 'undefined') throw new botError(commandNotFound);
       await botController[command](message, bot,  args);
-    } catch (err){
+    } catch (err) {
       if (err instanceof botError)
         message.reply(err.message);
     }
