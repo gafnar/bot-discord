@@ -26,12 +26,12 @@
     "supertest": "^4.0.2"
   },
   "dependencies": {
-    "discord.js": "11.5.1",
-    "dotenv": "^8.1.0",
-    "ffmpeg-binaries": "^4.0.0",
-    "mongoose": "5.4.20",
+    "discord.js": "^11.5.1",
+    "dotenv": "^8.2.0",
+    "ffmpeg-binaries": "^3.2.2-3",
+    "mongoose": "^5.8.7",
     "opusscript": "0.0.7",
     "request": "^2.88.0",
-    "winston": "3.2.1"
+    "winston": "^3.2.1"
   }
 }

@@ -1,7 +1,7 @@
 apps:
-  - name: bot-discord
+  - name: ms-bot
+    cwd: ms-bot/
     script: server.js
-    cwd: backend/
     env_local:
       NODE_ENV: "development"
       PORT: 3015
@@ -10,15 +10,6 @@ apps:
       APP_URL: http://localhost
       args:
         - environment:local
-    env_pre:
-      NODE_ENV: "production"
-      PORT: 3015
-      HTTPS: false
-      MONGO_URI: mongodb://ip:port/dbname
-      APP_URL: 
-      SSL_URL: /home/bot-discord/
-      args:
-        - environment:pre
     env_pro:
       NODE_ENV: "production"
       PORT: 3015
@@ -29,3 +20,12 @@ apps:
       LOG_LEVEL: info
       args:
         - environment:pro
+#  - name: ms-game
+#    cwd: ms-game/
+#    script: server.js
+#    env_local:
+#      NODE_ENV: "development"
+#      PORT: 3014
+#      HTTPS: false
+#        
+#
