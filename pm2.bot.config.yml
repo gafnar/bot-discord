@@ -20,11 +20,12 @@ apps:
       LOG_LEVEL: info
       args:
         - environment:pro
-  - name: ms-game
-    cwd: ms-game/
-    script: server.js
-    env_local:
-      NODE_ENV: "development"
-      PORT: 3014
-      HTTPS: false
-        
+#  - name: ms-game
+#    cwd: ms-game/
+#    script: server.js
+#    env_local:
+#      NODE_ENV: "development"
+#      PORT: 3014
+#      HTTPS: false
+#        
+#
