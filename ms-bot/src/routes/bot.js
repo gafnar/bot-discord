@@ -23,6 +23,7 @@ exports.start = (bot, config) => {
       if (typeof botController[command] === 'undefined') throw new botError(commandNotFound);
       await botController[command](message, bot,  args);
     } catch (err) {
+      console.log(err);
       if (err instanceof botError)
         message.reply(err.message);
     }
