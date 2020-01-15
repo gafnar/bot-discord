@@ -1,7 +1,7 @@
 const botController = require('../controller/bot.controller');
 const messageController = require('../controller/message.controller');
 const botError = require('../service/bot.error.service');
-const { commandNotFound } = require('../responses/bot.response');
+const { common: { commandNotFound } } = require('../responses/bot.response');
 
 const getCommandAndArgs = (message) => {
   const args = message.content.slice(config.discord.prefix.length).trim().split(/ +/g);
