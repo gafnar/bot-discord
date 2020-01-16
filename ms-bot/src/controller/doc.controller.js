@@ -15,5 +15,4 @@ module.exports = {
     });
     message.channel.send(list.join('\n'));
   },
-
 };
