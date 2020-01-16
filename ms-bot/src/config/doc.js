@@ -1,18 +1,11 @@
 module.exports = {
-  voice: {
-    audio: {},
+  audio: {
+    description: 'Sistema precario de audio',
   },
-  basic: {
-    ping: {},
-    clear: {},
+  ping: {
+    description: 'Sistema para ver la latencia del servidor',
   },
-  game: {
-    price: {},
-  },
-  images: {
-    diablo: {},
-  },
-  message: {
-    f: {},
+  clear: {
+    description: 'Comando de limpieza de mensajes en el chat',
   },
 };
