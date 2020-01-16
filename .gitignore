@@ -63,3 +63,5 @@ typings/
 ._.DS_Store
 .DS_Store
 /img/
+
+.vscode/*

@@ -11,7 +11,8 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/ms-bot/test/date.int.test.js"
+            "program": "${workspaceFolder}/ms-bot/server.js",
+            "envFile": "${workspaceFolder}/ms-bot/.env"
         }
     ]
 }
