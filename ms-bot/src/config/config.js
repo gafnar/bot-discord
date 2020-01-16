@@ -14,7 +14,7 @@ module.exports = {
     url: process.env.SSL_URL,
   },
   tokenSignature: process.env.TOKEN_SIGNATURE || 'SIGNATURE',
-  discord:{
+  discord: {
     token: process.env.TOKEN_DISCORD || '',
     prefix: 'm ',
   },

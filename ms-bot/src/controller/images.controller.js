@@ -1,8 +1,7 @@
-const config = require('../config/config');
 module.exports = {
   diablo: (message) => {
-    message.channel.send('El Diablo' ,{
-      embed:{
+    message.channel.send('El Diablo', {
+      embed: {
         file: 'assets/images/diablo.jpg',
         footer: 'Diablo mamadisimo',
       },

@@ -24,7 +24,7 @@ module.exports = {
   clear: async (message, bot, args) => {
     const deleteCount = getDeleteCountToArgs(args[0]);
     const fetched = await message.channel.fetchMessages({ limit: deleteCount });
-    const fetchedOk = fetched.filter(messageIsUnderDate);
-    await message.channel.bulkDelete(fetchedOk);
+    const fetchedFilterToTwoWeeks = fetched.filter(messageIsUnderDate);
+    await message.channel.bulkDelete(fetchedFilterToTwoWeeks);
   },
 };

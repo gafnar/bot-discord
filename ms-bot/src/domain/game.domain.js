@@ -1,5 +1,5 @@
 module.exports = {
-  getPrice: (name, platform) => {
+  getPrice: () => {
 
   },
 };

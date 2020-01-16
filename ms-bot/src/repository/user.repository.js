@@ -6,9 +6,7 @@ const schemaUser = {
 const schema = new mongoose.Schema(schemaUser, { timestamps: true });
 const User = mongoose.model('User', schema, 'users');
 
-const save = ({
-
-}) => new Promise(((resolve, reject) => {
+const save = () => new Promise(((resolve, reject) => {
   User.create({
 
   }, (err, res) => {
@@ -20,7 +18,7 @@ const save = ({
   });
 }));
 
-const update = ({}) => new Promise(((resolve, reject) => {
+const update = ({ _id }) => new Promise(((resolve, reject) => {
   User.findOneAndUpdate({ _id }, {
 
   }, {}, (err, res) => {

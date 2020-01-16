@@ -1,8 +1,8 @@
-class botError extends Error {
+class BotError extends Error {
   constructor(obj) {
     super(obj.warnings[0].msg);
-    this.name = 'botError';
+    this.name = 'BotError';
     this.details = obj;
   }
 }
-module.exports = botError;
+module.exports = BotError;
