@@ -65,3 +65,5 @@ typings/
 /img/
 
 .vscode/*
+
+bot-discord.code-workspace
